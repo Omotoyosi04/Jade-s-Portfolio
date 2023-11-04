@@ -1,0 +1,803 @@
+@font-face {
+    font-family: poppins;
+    src: url(font/Poppins-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family:lato;
+    src: url(font/Lato-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+    border-radius: 8px;
+    width: 5px;
+    
+}
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+h1 {
+    font-family: lato;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 800;
+}
+a:focus, a:active {
+    outline: 0;
+}
+nav {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+nav .icon {
+    display: none;
+}
+nav div p {
+    font-size: 12px;
+    display: inline-block;
+    line-height: 35px;
+    margin-right: 10px;
+}
+nav .pfp {
+    height: 50px;
+    width: 100px;
+    padding-left: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .pfp p {
+    font-family: poppins;
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #AA24D9;
+    color: #fff;
+}
+nav .pfp small{
+    font-size: 12px;
+    font-family: lato;
+    font-weight: 700;
+}
+nav ol {
+    padding-right: 1.6rem;
+}
+nav ol li{
+    display: inline-block;
+    margin-left: 20px;
+}
+nav a {
+    font-family: lato;
+    font-size: 10px;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .6s ease-in-out;
+}
+nav .nav-logo {
+    display: none;
+}
+nav button {
+    font-size: 8px;
+    border-radius: 5px;
+    background-color: #AA24D9;
+    border: 0;
+    padding: 6px 10px;
+    transition:0.8s
+}
+nav a:hover {
+    color: #B79CED;
+    letter-spacing: 4px;
+    transition: .6s ease-in-out;
+}
+nav button:hover {
+    font-size: 8px;
+    border-radius: 5px;
+    background-color:#B79CED;
+    border: 0;
+    padding: 6px 10px;
+    transition: 0.8s;
+}
+nav button a:hover {
+    letter-spacing: normal;
+    color: #fff;
+}
+nav button a {
+    color: #fff;
+}
+#home {
+    height: 100vh;
+    background-image: url(images/Mesh\ gradient.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    margin-top: 5rem;
+    padding: 5rem;
+}
+#home main {
+    padding-top: 5rem;
+    width: 70rem;
+}
+#home h1 {
+    font-size: 3rem;
+    font-family: 700;
+    text-align: left;
+}
+#home p {
+    font-family: lato;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 2.5rem 0;
+}
+#home div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+#home div figcaption {
+    width: 8rem;
+    height: 2.3rem;
+    color: #fff;
+    font-family: lato;
+    background-color: #AA24D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin: .5rem 1rem .5rem 0;
+    padding: .3rem 1rem;
+    transition: all .5s ease;
+}
+
+#home .view-pfp {
+    font-family: lato; 
+    color: #fff;
+    font-family: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: .5s ease;
+}
+#home .view-pfp:hover {
+    word-spacing: 5px;
+}
+#home .pfp-bg {
+    width: 40rem;
+    height: 30rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 90px/70px;
+}
+#home .pfp-bg img {
+    height: 30rem;
+    width: 30rem;
+}
+#about {
+    text-align: center;    
+    padding-top: 5rem;
+}
+#about main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+#about main p {
+    font-size: 14px;
+    font-family: poppins;
+    text-align: left;
+    width: 45rem;
+} 
+#resume {
+    text-align: center;
+    padding-top: 5rem;
+}
+#resume main {    
+    background: url(images/Mesh\ gradient.svg);
+    color: #fff;
+    font-family: poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: 3rem;
+    padding: 4rem;
+}
+#resume main td:nth-child(odd) {
+    font-size: 22px;
+    padding: .3rem;
+    font-weight: 700;
+    padding-right: 1.5rem;
+}
+#resume main td:nth-child(even) {
+    font-size: 16px;
+    padding: .3rem;
+    width: 29rem;
+    padding-left: 1.5rem;
+}
+#services {
+    padding-top: 5rem;
+    text-align: center;
+}
+#services main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#services main .designs {
+    width: 200px;
+    height: 260px;
+    background-image: url(images/Mesh\ gradient\ small.svg);
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin: 3rem 1rem 0 1rem;
+    border-radius: 10px;
+}
+#services main .designs img {
+    margin-bottom: 2rem;
+}
+#services main .designs h3 {
+    font-size: 20px;
+    margin-bottom: .3rem;
+}
+#projects {
+    padding-top: 5rem;
+    text-align: right;
+}
+#projects main {    
+    background-image: url(images/Mesh\ gradient\ small.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+#projects main a {
+    color: #fff;
+    font-family: lato;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+    transition: .5s ease-in;
+
+}
+#projects main a:hover {
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+#projects .project-slide {
+    display: flex;
+    padding: 0 5rem 2rem 6rem;
+}
+.project-img {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-radius: 25px;
+    margin: 1.2rem;
+    cursor: pointer;
+    transition: flex .5s ease-in-out;
+}
+.project-img:nth-child(1) {
+    flex: 0.3;
+}
+.project-img:nth-child(2) {
+    flex: 0.5;
+}
+.project-img:nth-child(3) {
+    flex: 0.7;
+}
+.project-img:hover {
+    flex: 1.7;
+}
+#contact {
+    padding: 5rem 5rem 0;
+    text-align: center;
+}
+#contact p {
+    font-family: poppins;
+    font-size: 16px;
+    line-height: 30px;
+    padding: 1rem;
+}
+#contact a {
+    padding: 0 .3rem 1rem;
+}
+
+/**  TABLET RESPONSIVENESS  **/
+
+@media(max-width: 1200px) {
+    #home main figcaption {
+        width: 6.4rem;
+        font-size: 14px;
+    }
+    #home .pfp-bg {
+        margin-top: 7rem;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
+@media(max-width: 885px) {
+    #home {
+        padding: 2rem;
+    }
+    #home main p {
+        width: 16rem;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    #home main div {
+        width: 20rem;
+    }
+    #home main figcaption {
+        width: 6.5rem;
+        font-size: 14px;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    #home .pfp-bg {
+        margin-left: -1.9rem;
+        margin-top: 15rem;
+        transform: scale(.89);
+    }
+    #about main {
+        padding: 4rem;
+    }
+    #about main img {
+        transform: scale(.95);
+        margin-left: -5rem;
+    }
+    #about main p {
+        width: 55rem;
+        margin-left: -4rem;
+    } 
+    #projects .project-slide {
+        padding: 2rem;
+    }
+    .project-img {
+        height: 40vh;
+        margin: .7rem;
+    }
+    .project-img:nth-child(1) {
+        flex: 0.4;
+    }
+    .project-img:nth-child(2) {
+        flex: 0.6;
+    }
+    .project-img:nth-child(3) {
+        flex: 0.8;
+    }
+    .project-img:hover {
+        flex: 10;
+    }
+}
+@media(max-width: 790px) {
+    #home {
+        height: fit-content;
+    }
+    html{
+        overflow-x: hidden;
+    }
+    #home h1 {
+        font-size: 50px;
+    }
+    #home .pfp-bg {
+        width: 25rem;
+    }
+    #home .pfp-bg img {
+        width: 20rem;
+        margin-top: 5rem;
+    }
+    #home main {
+        width: 60rem;
+    }
+    #home main p {
+        width: 80%;
+        font-size: 16px;
+    }
+}
+@media(max-width: 630px) {
+    #home .pfp-bg {
+        width: 17rem;
+        height: 20rem;
+    }
+    #home .pfp-bg img {
+        width: 15rem;
+        margin-top: -2.5rem;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
+@media(max-width: 550px) {
+    nav .icon {
+        display: block;
+    }
+    .icon {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        padding: 0;
+        margin-left: 1rem;
+        position: relative;
+        height: 50px;
+        width: 50px;
+        z-index: 100;
+    }
+    .icon:focus {
+        outline: 0;
+    }
+    .icon:hover {
+        background-color: transparent;
+    }
+    .icon .line {
+        background-color: #000;
+        height: 3px;
+        width: 13.2px;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        left: 4px;
+        transition: transform 0.5s linear, opacity 0.5s ease;
+    }
+    .icon .line2 {
+        top: auto;
+        bottom: 30px;
+        width: 17.6px;
+    }
+    .icon .line3 {
+        top: auto;
+        bottom: 22px;
+        width: 22px;
+    }
+    nav.active .icon .line1 {
+        transform: rotate(45deg) translateY(10px);
+        width: 22px;
+        background-color: #fff;
+    }
+    nav.active .icon .line2 {
+        opacity: 0;
+    }
+    nav.active .icon .line3 {
+        transform: rotate(-45deg) translateY(-11px);
+        background-color: #fff;
+    }
+    nav.active ol {
+        width: 10%;
+        transform: translateX(0);
+    }
+    .nav ol {
+        background-color: #AA24D9;
+        width: 10%;
+        height: 100vh;
+        position: absolute;
+        padding: 6rem 3.6rem 6rem .5rem;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: transform 0.5s linear;
+    }
+    .nav ol li {
+        display: flex;
+        padding-bottom: 40px;
+        transition: opacity 0.5s linear;
+    }
+    .nav.active ol li {
+        opacity: 1;
+    }
+    .nav ol a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 8px;
+        font-weight: 600;
+        margin-left: 1rem;
+    }
+    nav a:hover {
+        letter-spacing: 0;
+        transition: none;
+    }
+    .nav ol a .nav-logo {
+        display: block;
+        padding: 0rem 0 .3rem 1rem;
+        height: 30px;
+        width: 30px;
+    }
+    nav ol li button {
+        display: none;
+    }
+    
+    #home .pfp-bg {
+        margin-left: -4.5rem;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
+
+/**  MOBILE RESPONSIVENESS  **/
+
+@media(max-width: 430px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav .icon {
+        display: block;
+    }  
+    html{
+        overflow-x: hidden;
+    }
+    .icon {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        padding: 0;
+        margin-left: 1rem;
+        position: relative;
+        height: 50px;
+        width: 50px;
+        z-index: 100;
+    }
+    .icon:focus {
+        outline: 0;
+    }
+    .icon:hover {
+        background-color: transparent;
+    }
+    .icon .line {
+        background-color: #000;
+        height: 3px;
+        width: 13.2px;
+        border-radius: 5px;
+        position: absolute;
+        top: 10px;
+        left: 4px;
+        transition: transform 0.5s linear, opacity 0.5s ease;
+    }
+    .icon .line2 {
+        top: auto;
+        bottom: 30px;
+        width: 17.6px;
+    }
+    .icon .line3 {
+        top: auto;
+        bottom: 22px;
+        width: 22px;
+    }
+    nav.active .icon .line1 {
+        transform: rotate(45deg) translateY(10px);
+        width: 22px;
+        background-color: #fff;
+    }
+    nav.active .icon .line2 {
+        opacity: 0;
+    }
+    nav.active .icon .line3 {
+        transform: rotate(-45deg) translateY(-11px);
+        background-color: #fff;
+    }
+    nav.active ol {
+        width: 10%;
+        transform: translateX(0);
+    }
+    .nav ol {
+        background-color: #AA24D9;
+        width: 10%;
+        height: 100vh;
+        position: absolute;
+        padding: 6rem 3.6rem 6rem .5rem;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: transform 0.5s linear;
+    }
+    .nav ol li {
+        display: flex;
+        padding-bottom: 40px;
+        transition: opacity 0.5s linear;
+    }
+    .nav.active ol li {
+        opacity: 1;
+    }
+    .nav ol a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 8px;
+        font-weight: 600;
+        margin-left: 1rem;
+    }
+    nav a:hover {
+        letter-spacing: 0;
+        transition: none;
+    }
+    .nav ol a .nav-logo {
+        display: block;
+        padding: 0rem 0 .3rem 1rem;
+        height: 30px;
+        width: 30px;
+    }
+    nav ol li button {
+        display: none;
+    }
+    #home{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    #home .pfp-bg {
+        width: 23rem;
+        height: 27rem;
+        margin-top: -1rem;
+        margin-left: -16vw;
+        display: flex;
+    }
+    #home .pfp-bg img {
+        width: 22rem;
+        margin-top: 1rem;
+    }
+    #home main {
+        margin-top: -5rem;
+        width: 100%;
+    }
+    #home main figcaption {
+        width: 100px;
+        height: 22px;
+        padding: 10px 20px;
+    }
+    #home figcaption .pfp-logo {
+        width: 30px;
+        height: 20px;
+    }
+    #home .view-pfp {
+        color: #000;
+    }
+    #about main{
+        display: flex;
+        width: 87%;
+        flex-direction: column;
+        align-self: center;
+        justify-self: center;
+    }
+    #about main p {
+        width: 100%;
+        font-size: 12px;
+        padding-top: 3rem;
+    }
+    #resume {
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #resume main table tr{
+        display: flex;
+        flex-direction: column;
+        padding-left: 6rem;
+        padding-right: 1rem;
+        margin-left: -4.7rem;
+    }
+    #resume main td:nth-child(odd) {
+        font-size: 18px;
+    }
+    #resume main td:nth-child(even) {
+        font-size: 14px;
+        margin-left: -1rem;
+        width: 90vw;
+    }
+    #resume table tr td {
+        color: #000;
+    }
+    #services {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #services main {
+        width: 120vw;
+        margin-left: .5rem;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #services main .designs {
+        width: 60%;
+    }
+    #projects .project-img {
+        height: 20vh;
+    }
+    #contact{
+        width: 100%;
+        margin-left: -5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #contact p{
+        font-size: 14px;
+        line-height: 20px;
+        width: 100%;
+        padding: 0 1rem;
+    }
+    #contact .contact-icon {
+        width: 280px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contact-icon a {
+        margin: .5rem;
+    }
+}
+@media(max-width: 395px) {
+    #home .pfp-bg {
+        width: 95vw;
+        margin-left: -14vw !important;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
+@media(max-width: 377px) {
+    #home .pfp-bg {
+        width: 95vw;
+        margin-left: -15vw !important;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
+@media(max-width: 362px) {
+    #home .pfp-bg {
+        width: 95vw;
+        margin-left: -16vw !important;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
+@media(max-width: 325px) {
+    #home .pfp-bg {
+        width: 95vw;
+        margin-left: -17vw !important;
+    }
+    html{
+        overflow-x: hidden;
+    }
+}
